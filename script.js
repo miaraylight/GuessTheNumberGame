@@ -27,7 +27,7 @@ function optionsGenerator(ammountOfOptions, array) {
 }
 
 
-optionsGenerator(5, arrayOfOptions)
+optionsGenerator(8, arrayOfOptions)
 
 let numberOfAttemptsCounter = 0
 
@@ -60,7 +60,7 @@ function handleOnClick(e) {
 for (let index = 0; index < arrayOfOptions.length; index++) {
     let option = document.createElement("button")
     option.textContent = arrayOfOptions[index]
-    option.classList.add(".optionBtn");
+    option.classList.add("optionBtn");
     option.addEventListener("click", handleOnClick)
     playground.appendChild(option)
     
